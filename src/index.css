@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 15s linear infinite;
+}
+
+/* Estilos en el archivo CSS */
+.bg-dragonball-theme {
+  background-image: url("https://your-image-url.com"); /* O puedes usar un gradient */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.bg-dragonball-theme h1 {
+  font-family: "Kamehameha", sans-serif; /* Usa una fuente temática si tienes acceso */
+}
+
+.bg-dragonball-theme button {
+  transition: all 0.3s ease;
+}
+
+.bg-dragonball-theme button:hover {
+  background-color: #ffcc00; /* Cambio de color al pasar sobre el botón */
+  transform: scale(1.1); /* Agranda el botón al hacer hover */
+}
